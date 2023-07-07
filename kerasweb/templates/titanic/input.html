@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>타이타닉호 생존자 예측</h2>
+<form method="post" action="result">
+  성별:
+  <select name="sex">
+    <option value="male">남성</option>
+    <option value="female">여성</option>
+  </select><br>
+  좌석:
+  <select name="pclass">
+    <option value="1">1등석</option>
+    <option value="2">2등석</option>
+    <option value="3">3등석</option>
+  </select><br>
+  나이 :
+  <input type="text" name="age"><br>
+    동승자수(형제/배우자) : <input type="text" name="sibsp"><br>
+    동승자수(부모/자녀) : <input type="text" name="parch"><br>
+    요금 : <input type="text" name="fare"><br>
+  <input type="submit" value="확인">
+</form>
+</body>
+</html>
