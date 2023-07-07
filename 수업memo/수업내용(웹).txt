@@ -1,0 +1,28 @@
+web	java / c#-asp.net / python-django, flask
+app	ios-c / android-java, kotlin
+server	unix / linux(free)-ubuntu, centOS / windows(라이센스)
+
+<!--	html 주석
+/* */ 	css, javascript 주석
+//	javascript 주석
+
+--------------------------------------------------
+
+머신러닝 - 모형 >> 서비스 적용 (app, web)
+
+front end - javascript (클라이언트)
+back end - java, php, python, c# (server)
+	mysql/mariadb, orecle, sql server (DBMS)
+	linux - ubuntu, centOS
+full stack - front & back
+
+디자인
+기획
+
+-----------------------------------------------------
+ajax
+Asynchronous Javascript and XML
+비동기적 자바 xml
+
+동기식 - 순서대로
+비동기식 - 동시에

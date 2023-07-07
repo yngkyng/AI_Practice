@@ -1,0 +1,47 @@
+<정형데이터 분석>
+회귀분석
+시계열분석
+classification 분류
+	로지스틱 회귀분석
+	의사결정나무, 랜덤포레스트, 앙상블
+	사례기반추론
+	SVM
+	인공신경망
+clustering 군집화
+연관규칙분석
+
+<비정형데이터 분석>
+텍스트마이닝
+	감성분석
+	토픽모델링
+영상분류
+
+--------------------------------------------------------------
+로지스틱 회귀분석>>
+출력값 : 0.0 ~ 1.0 (0 / 1 판별기준 0.5)
+
+Logit(y,X)
+	summary(), 후진제거법 p-value, 회귀계수(기울기)
+
+LogisticRegression(X,y)
+
+confusion matrix
+
+classification report
+	precision - 모형의 적합도
+	recall - 실제 현상
+
+under / over / 복합 샘플링
+
+--------------------------------------------------------------------
+classification
+input	hidden	output
+		이진분류 > sigmoid 0.0~1.0
+		다분류 > softmax
+
+model.compile(loss= , optimizer= )
+	loss= mse
+	       /이진분류 > binary_crossentropy
+	       /다분류 > categorical_crossentropy
+
+

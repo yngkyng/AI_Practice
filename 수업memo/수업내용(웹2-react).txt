@@ -1,0 +1,13 @@
+자바스크립트 - frontend
+	jquery
+	react
+	node.js
+
+
+frontend		back end		DB
+React		Django		MariaDB
+
+>>MTV pattern
+Model		테이블 구조(models.py)
+Template		화면 설계(html)		--> react로 나눠서 하기
+View		백엔드 작업, 자료 처리(views.py)

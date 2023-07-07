@@ -1,0 +1,12 @@
+mysql - 서버로 사용
+heidisql - client (아니면 콘솔로 해야됨)
+
+명령문>>
+select		필드 선택			5
+from		테이블			1
+where		조건(행 선택)		2
+group by		행 요약			3
+having		group by 결과선택		4
+order by		행 정렬			6
+limit		전체 행의 부분집합		7
+-- 실행순서 때문에 as로 지정해놓은게 사용안되는 행이 있음

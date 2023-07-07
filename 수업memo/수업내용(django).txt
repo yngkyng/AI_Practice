@@ -1,0 +1,54 @@
+<django 작업 순서>
+
+프로젝트 새로 만들기
+django-admin startproject config .
+     장고 프로젝트 생성    프로젝트이름
+python manage.py startapp mytest
+	테이블 생성	테이블이름
+
+1. settings.py / models.py / admin.py : 파이참으로 작업 세팅
+settings.py (환경설정) 
+	(config/settings) - 서버 설정, 
+			테이블 만들때마다 installed_apps에 추가
+models.py (테이블에 대한 정의), admin.py(관리자 화면)
+	(모든 테이블 페이지/models, admin)
+	<db에 저장하려면>
+	class 테이블이름():
+		필드명 = 자료형...
+테이블을 만들려면 python manage.py startapp 테이블이름
+		python manage.py makemigrations
+		python manage.py migrate
+
+sqlite expert personal 실행 후 파이참 콘솔로 서버 연결
+		python manage.py runserver localhost:80
+
+2.
+urls.py : 서비스 url 목록 작성 (url과 함수에 대한 매핑)
+	(config/urls에도 추가)
+	salary = Salary(name=..., salary=...)
+	salary.save()
+	
+views.py : url 호출했을 때 실행할 파이썬 코드(클래스, 함수) 매핑
+	화면으로 넘어가기 전의 작업 처리
+	<db에 저장하려면>
+	변수.테이블이름(필드명=값,,,)
+	변수.save()
+
+templates/파일이름.html : 화면에 출력할 template(html) 작성
+
+static/images(정적인 리소스-이미지, css, js 등)
+
+
+python manage.py runserver localhost:80
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+
+
+
+------------------------------------------------------------------
+프로그램은 보통 비연결성
+
+연결을 유지하는 방법
+	cookie	클라이언트 정보	보안성 약함
+	session	서버		보안성 강함
